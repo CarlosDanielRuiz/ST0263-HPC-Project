@@ -12,6 +12,34 @@ HPC Project for STO0263 - Special Topics in Telematics
 
 El documento principal del proyecto se encuentra en [GDrive](https://docs.google.com/document/d/1fPNx0y-jmvhG9NYCfLXodjK0_UfVxWObjdfGKUp8pnE/edit?usp=sharing) y en este [Repositorio](docs/documentacion_final.md)
 
+## Prerequisitos
+
+Para la ejecución del proyecto se debe contar con los siguientes paquetes.
+
+```sh
+[Paquetes en la máquina]
+mpicc # Compilador de MPI
+
+[Paquetes Python]
+mpi4py
+biopython
+```
+
+## Ejecución
+
+1. Clonar el repositorio.
+```sh
+git clone https://github.com/CarlosDanielRuiz/STO0263-HPC-Project.git
+```
+2. Creación de un ambiente virtual. Este paso es recomendado 
+```sh
+python -m venv ambiente_proyecto
+```
+3. Activación del ambiente virtual.
+```sh
+source ambiente_proyecto/bin/activate
+```
+
 ## Video
 
 Sustentación en [YouTube]()
