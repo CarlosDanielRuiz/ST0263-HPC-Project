@@ -47,10 +47,10 @@ AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 - Rosalind Team. (2012, Julio 2). Counting DNA Nucleotides. Recuperado de http://rosalind.info/problems/dna/
 
 ## Información Adicional
-- (https://drive.google.com/open?id=1Hw6EfhzVBFDVCLUmrgrNZQxOT9j-A38v "Secuenciación del DNA")
-- (https://en.wikipedia.org/wiki/Nucleic_acid_notation "Notación de Ácido Nucleico") (Alfabeto para Secuencias Ambiguas)
+- [Secuenciación del DNA](https://drive.google.com/open?id=1Hw6EfhzVBFDVCLUmrgrNZQxOT9j-A38v)
+- [Notación de Ácido Nucleico](https://en.wikipedia.org/wiki/Nucleic_acid_notation) (Alfabeto para Secuencias Ambiguas)
 
 ## Bases de Datos de Búsqueda
-- (https://www.ncbi.nlm.nih.gov/ "NCBI - National Center for Biotechnology Information")
-- (http://www.plantgdb.org/prj/GenomeBrowser/ "PlantGDB - Resources for Plant Comparative Genomics")
+- [NCBI - National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/)
+- [PlantGDB - Resources for Plant Comparative Genomics](http://www.plantgdb.org/prj/GenomeBrowser/)
 
