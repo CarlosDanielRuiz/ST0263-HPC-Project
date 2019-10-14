@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import sys
 from Bio import SeqIO
 
@@ -21,12 +22,12 @@ def counting(long_string):
 
 def main():
     file_name = sys.argv[1]
-    for record in SeqIO.parse(file_name, 'fasta'):
+    for record in SeqIO.parse(file_name, "fasta"):
         print("Longitud de la cadena: %d" % len(record))
         _string = record.seq
         a, c, g, t, n = counting(_string)
         print("A: {} C: {} G: {} T: {}".format(a, c, g, t))
-        print("Cantidad de N: %d" % n)
+        print("Cantidad de N: %d \n" % n)
 
 
 if __name__ == "__main__":
