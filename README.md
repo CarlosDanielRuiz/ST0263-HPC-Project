@@ -1,6 +1,6 @@
-# ST00263-HPC-Project
+# ST0263-HPC-Project
 
-HPC Project for ST00263 - Special Topics in Telematics
+HPC Project for ST0263 - Special Topics in Telematics
 
 ## Integrantes
 
