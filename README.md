@@ -40,8 +40,7 @@ python -m venv ambiente_proyecto
 source ambiente_proyecto/bin/activate
 ```
 
-## Video
-
-Sustentación en [YouTube]()
-
-## Código de Honor
+## Sustentación en Video
+- Mateo Marulanda Cifuentes - [Video]()
+- Carlos Daniel Ruiz Gomez - [Video]()
+- Esteban Sierra Múnera - [Video]()
