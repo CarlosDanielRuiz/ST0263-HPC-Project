@@ -1,6 +1,6 @@
-# STO0263-HPC-Project
+# ST00263-HPC-Project
 
-HPC Project for STO0263 - Special Topics in Telematics
+HPC Project for ST00263 - Special Topics in Telematics
 
 ## Integrantes
 
@@ -10,7 +10,7 @@ HPC Project for STO0263 - Special Topics in Telematics
 
 ## Documentacion
 
-El documento principal del proyecto se encuentra en [GDrive](https://docs.google.com/document/d/1fPNx0y-jmvhG9NYCfLXodjK0_UfVxWObjdfGKUp8pnE/edit?usp=sharing) y en este [Repositorio](docs/documentacion_final.md)
+El documento principal del proyecto se encuentra en [GDrive](https://docs.google.com/document/d/1fPNx0y-jmvhG9NYCfLXodjK0_UfVxWObjdfGKUp8pnE/edit?usp=sharing) y en este [Repositorio](docs/presentacion_proyecto.md)
 
 ## Prerequisitos
 
@@ -40,8 +40,7 @@ python -m venv ambiente_proyecto
 source ambiente_proyecto/bin/activate
 ```
 
-## Video
-
-Sustentación en [YouTube]()
-
-## Código de Honor
+## Sustentación en Video
+- Mateo Marulanda Cifuentes - [Video]()
+- Carlos Daniel Ruiz Gomez - [Video]()
+- Esteban Sierra Múnera - [Video]()

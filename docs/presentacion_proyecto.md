@@ -1,4 +1,4 @@
-# Documento Final
+# Presentación del Proyecto
 
 ## Problema
 
@@ -44,6 +44,13 @@ AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 
 ## Referencias
 
-- http://rosalind.info/problems/dna/
-- https://www.ncbi.nlm.nih.gov/nuccore/NC_001416.1?report=fasta
-- http://www.plantgdb.org/prj/GenomeBrowser/
+- Rosalind Team. (2012, Julio 2). Counting DNA Nucleotides. Recuperado de http://rosalind.info/problems/dna/
+
+## Información Adicional
+- [Secuenciación del DNA](https://drive.google.com/open?id=1Hw6EfhzVBFDVCLUmrgrNZQxOT9j-A38v)
+- [Notación de Ácido Nucleico](https://en.wikipedia.org/wiki/Nucleic_acid_notation) (Alfabeto para Secuencias Ambiguas)
+
+## Bases de Datos de Búsqueda
+- [NCBI - National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/)
+- [PlantGDB - Resources for Plant Comparative Genomics](http://www.plantgdb.org/prj/GenomeBrowser/)
+
