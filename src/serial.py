@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import sys
 from Bio import SeqIO
-
+from time import time
 
 def counting(long_string):
     count_a = count_c = count_g = count_t = count_u = count_w = count_s = count_m = count_k = count_r = count_y = count_b = count_d = count_h = count_v = count_n = count_z = 0
@@ -45,6 +45,8 @@ def counting(long_string):
 
 
 def main():
+    start_time = time()
+ 
     file_name = sys.argv[1]
     for record in SeqIO.parse(file_name, "fasta"):
         print("Longitud de la cadena: %d" % len(record))
@@ -54,6 +56,8 @@ def main():
         print("OTRAS BASES")
         print("U: {} W: {} S: {} M: {} K: {} R: {} Y: {} B: {} D: {} H: {} V: {} N: {} Z: {} \n".format(
             u, w, s, m, k, r, y, b, d, h, v, n, z))
+    elapsed_time = (time() - start_time)/60
+    print("tiempo transcurrido: %0.10f minutos." % elapsed_time)
 
 
 if __name__ == "__main__":

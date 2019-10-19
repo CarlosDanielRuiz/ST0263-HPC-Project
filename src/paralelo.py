@@ -3,6 +3,7 @@ import sys
 import click
 import multiprocessing as mp
 
+from time import time
 from math import ceil
 from Bio import SeqIO
 from textwrap import wrap
@@ -54,6 +55,7 @@ def counting(long_string):
 @click.option('-np', '--cores', 'used_cores', type=click.INT, default=2, required=False)
 @click.option('-f', '--file', 'file_name', type=click.STRING, required=True)
 def main(used_cores, file_name):
+    start_time = time()
     if used_cores <= CORES:
         print("Se van a usar %d Cores de %d disponibles \n" % (used_cores, CORES))
         for record in SeqIO.parse(file_name, 'fasta'):
@@ -74,6 +76,8 @@ def main(used_cores, file_name):
     else:
         print("Se estan intentando usar mas cores de los disponibles por la maquina")
         sys.exit(1)
+    elapsed_time = (time() - start_time)/60
+    print("tiempo transcurrido: %0.10f minutos." % elapsed_time)
 
 
 if __name__ == "__main__":
