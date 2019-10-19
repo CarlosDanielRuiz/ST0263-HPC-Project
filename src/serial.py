@@ -56,7 +56,7 @@ def main():
         print("OTRAS BASES")
         print("U: {} W: {} S: {} M: {} K: {} R: {} Y: {} B: {} D: {} H: {} V: {} N: {} Z: {} \n".format(
             u, w, s, m, k, r, y, b, d, h, v, n, z))
-    elapsed_time = (time() - start_time)/1000
+    elapsed_time = (time() - start_time)*1000
     print("tiempo transcurrido: %0.10f milisegundos." % elapsed_time)
 
 
