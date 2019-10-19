@@ -77,7 +77,7 @@ def main(used_cores, file_name):
         print("Se estan intentando usar mas cores de los disponibles por la maquina")
         sys.exit(1)
     elapsed_time = (time() - start_time)/1000
-    print("tiempo transcurrido: %0.10f minutos." % elapsed_time)
+    print("tiempo transcurrido: %0.10f milisegundos." % elapsed_time)
 
 
 if __name__ == "__main__":
