@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import sys
+import click
 import multiprocessing as mp
 
 from math import ceil
@@ -49,25 +50,30 @@ def counting(long_string):
 
     return count_a, count_c, count_g, count_t, count_u, count_w, count_s, count_m, count_k, count_r, count_y, count_b, count_d, count_h, count_v, count_n, count_z
 
-
-def main():
-    print("Cores de la maquina: %d \n" % CORES)
-    file_name = sys.argv[1]
-    for record in SeqIO.parse(file_name, 'fasta'):
-        POOL = mp.Pool(CORES)
-        print("Longitud de la cadena: %d" % len(record))
-        _string = record.seq
-        part_length = ceil(len(_string)/CORES)
-        print("Longitud de las particiones: %d" % part_length)
-        string_parts = wrap(str(_string), part_length)
-        results = POOL.map(counting, [part for part in string_parts])
-        POOL.close()
-        total = tuple(map(sum, zip(*results)))
-        print("A: {a} C: {c} G: {g} T: {t}".format(
-            a=total[0], c=total[1], g=total[2], t=total[3]))
-        print("OTRAS BASES")
-        print("U: {u} W: {w} S: {s} M: {m} K: {k} R: {r} Y: {y} B: {b} D: {d} H: {h} V: {v} N: {n} Z: {z} \n".format(
-            u=total[4], w=total[5], s=total[6], m=total[7], k=total[8], r=total[9], y=total[10], b=total[11], d=total[12], h=total[13], v=total[14], n=total[15], z=total[16]))
+@click.command()
+@click.option('-np', '--cores', 'used_cores', type=click.INT, default=2, required=False)
+@click.option('-f', '--file', 'file_name', type=click.STRING, required=True)
+def main(used_cores, file_name):
+    if used_cores <= CORES:
+        print("Se van a usar %d Cores de %d disponibles \n" % (used_cores, CORES))
+        for record in SeqIO.parse(file_name, 'fasta'):
+            POOL = mp.Pool(used_cores)
+            print("Longitud de la cadena: %d" % len(record))
+            _string = record.seq
+            part_length = ceil(len(_string)/used_cores)
+            print("Longitud de las particiones: %d" % part_length)
+            string_parts = wrap(str(_string), part_length)
+            results = POOL.map(counting, [part for part in string_parts])
+            POOL.close()
+            total = tuple(map(sum, zip(*results)))
+            print("A: {a} C: {c} G: {g} T: {t}".format(
+                a=total[0], c=total[1], g=total[2], t=total[3]))
+            print("OTRAS BASES")
+            print("U: {u} W: {w} S: {s} M: {m} K: {k} R: {r} Y: {y} B: {b} D: {d} H: {h} V: {v} N: {n} Z: {z} \n".format(
+                u=total[4], w=total[5], s=total[6], m=total[7], k=total[8], r=total[9], y=total[10], b=total[11], d=total[12], h=total[13], v=total[14], n=total[15], z=total[16]))
+    else:
+        print("Se estan intentando usar mas cores de los disponibles por la maquina")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -17,12 +17,9 @@ El documento principal del proyecto se encuentra en [GDrive](https://docs.google
 Para la ejecución del proyecto se debe contar con los siguientes paquetes.
 
 ```sh
-[Paquetes en la máquina]
-mpicc # Compilador de MPI
-
 [Paquetes Python]
-mpi4py
 biopython
+click
 ```
 
 ## Ejecución
@@ -39,6 +36,17 @@ python -m venv ambiente_proyecto
 ```sh
 source ambiente_proyecto/bin/activate
 ```
+4. Instalar requisitos del programa
+```sh
+pip install -r requirements.txt
+```
+5. Descomprimir los archivos FASTA que desee usar
+6. Ejecutar bajo el comando
+```sh
+python paralelo.py -np <cores> -f <archivo.fasta>
+```
+
+> Los archivos Fasta se encuentran en el directorio `genomas`. Para más ejemplos, usar los links en el documento de GDrive
 
 ## Sustentación en Video
 - Mateo Marulanda Cifuentes - [Video]()
