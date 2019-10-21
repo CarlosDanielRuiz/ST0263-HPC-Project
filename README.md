@@ -49,6 +49,6 @@ python paralelo.py -np <cores> -f <archivo.fasta>
 > Los archivos Fasta se encuentran en el directorio `genomas`. Para más ejemplos, usar los links en el documento de GDrive
 
 ## Sustentación en Video
-- Mateo Marulanda Cifuentes - [Video]()
-- Carlos Daniel Ruiz Gomez - [Video]()
+- Mateo Marulanda Cifuentes - [Video](https://www.youtube.com/watch?v=ZNSFG_qY81s&feature=youtu.be)
+- Carlos Daniel Ruiz Gomez - [Video](https://www.youtube.com/watch?v=6U8pt2Z7yiY&feature=youtu.be)
 - Esteban Sierra Múnera - [Video]()
