@@ -51,4 +51,4 @@ python paralelo.py -np <cores> -f <archivo.fasta>
 ## Sustentación en Video
 - Mateo Marulanda Cifuentes - [Video](https://www.youtube.com/watch?v=ZNSFG_qY81s&feature=youtu.be)
 - Carlos Daniel Ruiz Gomez - [Video](https://www.youtube.com/watch?v=6U8pt2Z7yiY&feature=youtu.be)
-- Esteban Sierra Múnera - [Video]()
+- Esteban Sierra Múnera - [Video](https://www.youtube.com/watch?v=gACGts_PtSw)
